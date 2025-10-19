@@ -1,0 +1,280 @@
+body,
+.app-bg {
+  background: linear-gradient(135deg, #e1eafe 0%, #fff 100%);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.heading-hero {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 2.7rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 32px 0 12px 0;
+  color: #163d51;
+  text-shadow: 0 1px 2px #ddd;
+}
+
+.app-container {
+  max-width: 1350px;
+  margin: auto;
+  padding-top: 18px;
+}
+
+.resume-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: flex-start;
+}
+@media (max-width: 1180px) {
+  .resume-section {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+  }
+}
+
+.resume-form {
+  min-width: 340px;
+  max-width: 370px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 #d6e0fa33;
+  padding: 23px 24px 19px 24px;
+  animation-delay: 0.2s;
+}
+
+.form-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #343f58;
+  margin-bottom: 15px;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 12px;
+}
+.floating-input {
+  border: none;
+  border-bottom: 2px solid #a3c2f3;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  padding: 10px 4px 6px 0;
+  font-size: 1.08em;
+  color: #222;
+  transition: border-color 0.2s;
+}
+.floating-input:focus {
+  border-bottom: 2px solid #5c8bed;
+}
+.floating-label {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  pointer-events: none;
+  color: #8ea1be;
+  font-size: 1em;
+  transition: all 0.19s;
+}
+.floating-input:focus + .floating-label,
+.floating-input:not(:placeholder-shown) + .floating-label {
+  top: -11px;
+  font-size: 0.93em;
+  color: #4577b8;
+}
+textarea.floating-input {
+  min-height: 40px;
+  resize: vertical;
+}
+
+.resume-card {
+  min-width: 440px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.resume-preview-container {
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fafdff;
+  position: relative;
+  min-height: 570px;
+  box-shadow: 0 6px 30px -10px #b1b8cf42;
+}
+.resume-sidebar {
+  width: 130px;
+  background: #4a90e2;
+  color: #fff;
+  padding: 26px 8px 18px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.avatar {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 2.4em;
+  margin-bottom: 23px;
+  border: 3px solid rgba(255, 255, 255, 0.32);
+  box-shadow: 0 2px 8px 0 #20509d25;
+}
+/* Sidebar contact - new styles allow full lines and wrapping */
+.sidebar-contact > div {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  font-size: 1em;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+.sidebar-contact a {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+.resume-main {
+  background: #fafdff;
+  padding: 28px 28px 21px 36px;
+  width: 370px;
+}
+.resume-name {
+  font-size: 2.07em;
+  font-weight: bold;
+  color: #2a4352;
+  margin-bottom: 0px;
+}
+.resume-address {
+  font-size: 1em;
+  color: #607090;
+  margin-bottom: 9px;
+}
+.resume-section {
+  margin-top: 16px;
+  margin-bottom: 11px;
+}
+.resume-section-title {
+  display: block;
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 5px;
+  font-size: 1.05em;
+  letter-spacing: 0.3px;
+}
+.section-content {
+  font-size: 1em;
+  color: #222;
+  line-height: 1.44;
+}
+.resume-skillset {
+  margin-bottom: 3px;
+}
+.skill-chip {
+  background: #e3ecfa;
+  color: #285177;
+  padding: 5px 13px 5px 12px;
+  margin-right: 7px;
+  border-radius: 19px;
+  font-weight: 500;
+  font-size: 0.99em;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.exp-row,
+.proj-row {
+  padding-left: 4px;
+  margin-bottom: 2px;
+  color: #273046;
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 4px 24px 0 #d6e0fa29;
+}
+.glass-btn {
+  background: #63a5ff;
+  color: #fff;
+  border: none;
+  padding: 13px 35px;
+  margin-top: 25px;
+  border-radius: 26px;
+  font-size: 1.13em;
+  font-weight: 500;
+  box-shadow: 0 2px 9px 0 #abc8e833;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.glass-btn:hover {
+  background: #467cd5;
+  box-shadow: 0 5px 19px 0 #cae2ff51;
+}
+.anim-pulse {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #87bfff57;
+  }
+  70% {
+    box-shadow: 0 0 0 11px #87bfff09;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #87bfff00;
+  }
+}
+.anim-fadein {
+  animation: fadeIn 0.76s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.footer-watermark {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 12px 0 8px 0;
+  text-align: center;
+  font-size: 1.09em;
+  color: #275b94a1;
+  opacity: 0.92;
+  z-index: 3;
+  letter-spacing: 1.5px;
+  font-family: "Poppins", Arial, sans-serif;
+  background: none;
+  user-select: none;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .resume-section {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .resume-form,
+  .resume-card {
+    margin: 0 auto;
+  }
+  .resume-main {
+    width: 95vw;
+  }
+  .resume-preview-container {
+    min-width: 300px;
+  }
+}
